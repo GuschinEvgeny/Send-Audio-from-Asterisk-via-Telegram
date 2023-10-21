@@ -3,7 +3,7 @@ import glob
 
 # Initialize a variable 
 inVar = glob.iglob(
-    '/Volumes/Transcend/Scripts/Send audio via Telegram from Asterisk/monitor/**/in-78312889797*.wav',
+    '//monitor/**/in-*.wav',
     recursive = True
     ) # Set Pattern in iglob() function 
 # Returning class type of variable 

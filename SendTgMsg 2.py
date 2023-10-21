@@ -19,9 +19,9 @@ text = 'fileContent'
 #-------------модуль отправки выше с помощью функции print. Надой найти asterisk.agi
 
 def main(text: str): 
-    token = "6654061760:AAH0PGZM8wfqFVJNAdy_ZAs6ou97A9kPX1U" 
+    token = "YOUR_BOT_TOKEN" 
     url = "https://api.telegram.org/bot" 
-    channel_id = "284515456" 
+    channel_id = "YOUR_TG_ID" 
     url += token 
     method = url + "/sendMessage"  
     r = requests.post(method, data={ 

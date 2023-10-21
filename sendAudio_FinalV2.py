@@ -21,7 +21,7 @@ def timeComparison(result):
     if creatFileTime > comparisonPeriod:
         file.write(result + '\n')
 
-path = '/Volumes/Transcend/Scripts/Send audio via Telegram from Asterisk/monitor/**/in-78312889797*.wav'
+path = 'Asterisk/monitor/**/in*.wav'
 
 file = open('pathAudio', 'w')
 inVar = glob.iglob(path, recursive = True)
@@ -34,8 +34,8 @@ file.close()
 
 
 ##Telegram Data input#
-TOKEN = "6654061760:AAH0PGZM8wfqFVJNAdy_ZAs6ou97A9kPX1U"
-chat_id = "284515456"
+TOKEN = "YOUR_BOT_TOKEN"
+chat_id = "YOUR_TG_ID"
 bot = telegram.Bot(token=TOKEN)
 
 

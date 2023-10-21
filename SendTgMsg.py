@@ -14,8 +14,8 @@ exten = str(agi.env["agi_extension"])
 text = ' 🟢 <b>Incoming call from  </b> ' + exten + ' to ' + phone
 
 #----------------для пробы строки ниже---------
-TOKEN = "6654061760:AAH0PGZM8wfqFVJNAdy_ZAs6ou97A9kPX1U"
-chat_id = "284515456"
+TOKEN = "YOUR_BOT_TOKEN"
+chat_id = "YOUR_TG_ID"
 bot = telegram.Bot(token=TOKEN)
 message = text
 

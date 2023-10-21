@@ -8,11 +8,11 @@ import asyncio
 import glob
 import time
 ##Telegram Data input#
-TOKEN = "6654061760:AAH0PGZM8wfqFVJNAdy_ZAs6ou97A9kPX1U"
-chat_id = "284515456"
+TOKEN = "YOUR_BOT_TOKEN"
+chat_id = "YOUR_TG_ID"
 bot = telegram.Bot(token=TOKEN)
 #Template of searching#
-path = '/Volumes/Transcend/Scripts/Send audio via Telegram from Asterisk/monitor/**/in-78312889797*.wav'
+path = '//monitor/**/in-*.wav'
 #Instalazing glob variable, path of searching and method of search###
 inVar = glob.iglob(path, recursive = True)
 #Starting a cycle. Create file with search result###
